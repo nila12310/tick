@@ -23,7 +23,12 @@ function draw(){
     scAngle = map(sc, 0, 60, 0, 360);
     mnAngle = map(mn,0,60,0,360)
     hrAngle = map(hr % 12,0,12,0,360)
-
+#clock {
+  width: 900px;
+  margin: 200px;
+   border: 2px solid black;
+  border-radius: 20px;
+}
     //drawing seconds hand
     push();
     rotate(scAngle); //rotate the hand based on angle calculated
